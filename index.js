@@ -24,6 +24,9 @@ app.use(
 // Routes
 
 app.use("/videos", videoRoutes);
+app.get("/",(req,  res) => {
+  res.sendStatus(200)
+})
 
 app.listen(PORT, () => {
   console.log(`Server connected on PORT ${PORT}`);
